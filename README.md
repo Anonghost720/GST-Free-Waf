@@ -1,4 +1,3 @@
-# GST Free Waf
 # GST WAF - Web Application Firewall
 Original Free Web Application Firewall, Open-Source.
 
