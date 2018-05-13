@@ -1,4 +1,4 @@
-# GST waf - Web Application Firewall
+# GST WAF - Web Application Firewall
 Original Free Web Application Firewall, Open-Source.
 
 # Features
@@ -20,29 +20,29 @@ Original Free Web Application Firewall, Open-Source.
 # Sample Usage
 ```php
 // Before all your code starts.
-require('gwaf.php');
-$gwaf = new gwaf();
-$gwaf->start();
+require('gWAF.php');
+$gWAF = new gWAF();
+$gWAF->start();
 // Your code below.
 ```
 # Advanced Usage
 ```php
 // Before of all your CODE.
-require('gwaf.php');
-$gwaf = new gwaf();
+require('gWAF.php');
+$gWAF = new gWAF();
 // Cloudflare Mode [Optional]
-$gwaf->useCloudflare();
+$gWAF->useCloudflare();
 // BlazingFast Mode [Optional]
-$gwaf->useBlazingfast();
+$gWAF->useBlazingfast();
 // Use Own IP Header [Optional]
-$gwaf->customIPHeader('IP-Header');
+$gWAF->customIPHeader('IP-Header');
 // Anti-Cookie-Steal Method [Optional]
-$gwaf->antiCookieSteal('username'); // For trigger if on PHPSESSID is logged.
+$gWAF->antiCookieSteal('username'); // For trigger if on PHPSESSID is logged.
 
 // Check separated types.
-$gwaf->checkGET();
-$gwaf->checkPOST();
-$gwaf->checkCOOKIE();
+$gWAF->checkGET();
+$gWAF->checkPOST();
+$gWAF->checkCOOKIE();
 // Your code below.
 ```
 # CSRF Validation Example
